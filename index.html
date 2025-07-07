@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-sidebar">
+            <img src="./assets/1.jpg" alt="" class="templates">
+            <img src="./assets/2.jpg" alt="" class="templates">
+            <img src="./assets/3.jpg" alt="" class="templates">
+            <img src="./assets/4.jpg" alt="" class="templates">
+            <img src="./assets/5.jpg" alt="" class="templates">
+        </div>
+
+        <div class="editor">
+            <canvas id="canvas"></canvas>
+            <input type="text" id="overlayText" placeholder="Enter your text here">
+        </div>
+
+        <div class="controls">
+            <div class="font-effects">
+                <h3>Font Effects</h3>
+                <label>Font family</label>
+                <select id="fontselect">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
+                
+                <label>Font size</label>
+                <input type="number" id="fontsize" value="24">
+
+                <label>Font alignment</label>
+                <select id="alignselect">
+                    <option value="left">Left</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right</option>
+                </select>
+            </div>
+
+            <div class="img-effects">
+                <h3>Image Effects</h3>
+                <label><input type="checkbox" id="sepia" value="Sepia"> Sepia</label>
+                <label><input type="checkbox" id="grayscale" value="Grayscale"> Grayscale</label>
+                <label><input type="checkbox" id="blur" value="Blur"> Blur</label>
+            </div>
+            <div class="btns">
+                <button id="apply">Apply</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
